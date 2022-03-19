@@ -1,0 +1,237 @@
+body {
+    background-color: #ededed;
+}
+
+.navbarpai {
+    background-color: #d2d3d5;
+    height: 110px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.logonav img {
+    margin-top: 10px;
+    width: 100px;
+}
+
+.navbar-nav {
+    flex-direction: row;
+    justify-content: end;
+    gap: 30px;
+    margin-top: -60px;
+
+}
+
+.nav-item a {
+    text-decoration: none;
+    font-family: bebas neue, sans-serif;
+    font-size: 2rem;
+    color: #4b4b4d;
+    height: 100px;
+    margin-bottom: 100px;
+    transition: .5s;
+}
+
+.nav-item a:hover {
+    color: gray
+}
+
+/* corpo */
+
+.container-corpo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+.container-corpo::after {
+    content: "";
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background: url('/img/IMAGEM-1-FINAL-PS-CORRETA.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+  }
+
+.escrita-central {
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+    opacity: 1!important;
+    position: absolute;
+}
+
+.escrita-central h1 {
+    font-size: 6rem;
+    font-family: bebas neue, sans-serif;
+}
+.escrita-central p {
+    font-size: 3rem;
+    font-family: bebas neue, sans-serif;
+}
+
+/* Sobre a empresa */
+
+.empresa-titulo h1 {
+    font-family: bebas neue, sans-serif;
+    font-size: 6rem;
+    color: #4b4b4d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.imagens-empresa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagens-empresa #imagem1 {
+    width: 800px;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin: 90px 0 20px 50px;
+}
+
+.imagens-empresa p {
+    font-family: poppins; 
+    font-size: 1.5rem;
+    margin-left: 20px;
+}
+
+@media(max-width:768px) {
+    .imagens-empresa {
+        max-width: 700px;
+        flex-direction: column;
+    }
+}
+
+.imagens-empresa #imagem2 {
+    width: 800px;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin: 0 20px 40px 0;
+}
+
+/* portfólio */
+
+.container-portifolio {
+    background-color: #888888;
+    height: 70rem;
+}
+
+.imagens-portifolio {
+    display: flex;
+    justify-content: center;
+}
+
+.imagens-portifolio h1 {
+    font-family: bebas neue, sans-serif;
+    font-size: 6rem;
+    margin-top: 30px;
+}
+
+.containers {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    
+}
+
+.imagens a img {
+    width: 750px;
+    transition: 0.5s;
+}
+
+.imagens a img:hover {
+    opacity: 0.8;
+}
+
+@media(max-width:768px) {
+    .containers {
+        display: flex;
+        flex-direction: column;
+    }
+}
+    
+/* footer */
+
+footer .container-fluid {
+    background-color: #d2d3d5;
+    height: 400px;
+}
+
+footer .contatos-escrito {
+    display: flex;
+    justify-content: center;
+}
+
+footer h1 {
+    font-family: bebas neue, sans-serif;
+    font-size: 6rem;
+    margin-top: 20px;
+    color: black;
+}
+
+.icones-contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.icones-contato a i {
+    font-size: 3rem;
+    color: black;
+    margin-top: 20px;
+}
+.icones-contato a i:hover {
+    color: #4b4b4d;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.email p {
+    font-family: poppins; 
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+#copy {
+    background-color: #888888;
+    height: 60px;
+}
+
+#copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#copy p {
+    font-family: poppins;
+    font-size: 20px;
+}
+
+#copy a {
+    text-decoration: none;
+    color: white;
+}
